@@ -28,7 +28,8 @@ export default class Dashboard extends Component {
     }
 
     deleteIt(id) {
-        axios.delete(`/api/test?id=${id}`).then(results => {
+        console.log(id)
+        axios.delete(`/api/test/${0}`).then(results => {
             this.setState({ inventory: results.data})
         })
     }
@@ -38,11 +39,14 @@ export default class Dashboard extends Component {
     let {inventory} = this.state
     var listItems = inventory.map((val, i) => {
         return <div key={i}>
+        <div id="text">
         <p>Property Owner: {val.name_applicant}</p>
         <p>Address: {val.address_house}</p>
         <p>City: {val.city}</p>
         <p>State: {val.state_house}</p>
         <p>Zip: {val.zipcode }</p>
+        <button id="listButton" onClick={() => this.deleteIt(val)}>X</button>
+        </div>
         </div>
         
     })
@@ -53,9 +57,9 @@ export default class Dashboard extends Component {
                     <Link to="/wizard"><button id="button">Add New Property</button></Link>
                 </div>
                 <div className="greybox">
-                    <House listing={listItems}>
-                        <button id="listButton" onClick={this.deleteIt}>X</button>
+                    <House listing={listItems}>    
                     </House>
+                    
                 </div>
                 
             </div>

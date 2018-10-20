@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 
 // Require functions from controller
-const { getHouse, addHouse } = require('./Controller/controller')
+const { getHouse, addHouse, deleteHouse } = require('./Controller/controller')
 
 const port = 3500;
 
@@ -21,7 +21,7 @@ massive(process.env.CONNECTION_STRING)
 // Endpoints
 app.post(`/api/test`, addHouse);
 app.get(`/api/test`, getHouse);
-// app.delete('/api/inventory/:id', deleteThings);
+app.delete('/api/test/:id', deleteHouse);
 
 
 app.listen(port, () => {
