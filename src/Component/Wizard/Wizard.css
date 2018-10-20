@@ -1,0 +1,44 @@
+.Wizard {
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 30%;
+    padding-right: 30%;
+    position: relative;
+    background: #E5F4EC;
+}
+
+.Cancel {
+    background: #FEC2C2;
+    display: flex;
+    float: right;
+    /* justify-content: flex-start; */
+}
+
+.Complete {
+    background: #8AEA92;
+    display: flex;
+    float: right;
+}
+
+.Container {
+    width: 100%;
+}
+
+#left {
+    float: left;
+    width: 100px;
+}
+
+#center {
+    display: inline-block;
+    margin: 20px auto;
+    width: 100px;
+}
+
+#right {
+    float: right;
+    width: 100px;
+}
+

@@ -1,0 +1,50 @@
+.Dashboard {
+    width: 50%;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 30%;
+    background: #E5F4EC;
+    height: 90vh;
+    
+}
+
+#Dash {
+    /* display: inline-block; */
+}
+
+#dash {
+    float: left;
+    margin-left: 3%;
+    height: 10vh;
+    font-family: Houshka Rounded Medium;
+    
+
+}
+
+#button {
+    background: #8AEA92;
+    float: right;
+    margin-top: 3%;
+    margin-right: 3%;
+    width: 120px;
+    height: 25px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+
+    /* border-radius: 10px; */
+}
+
+.greybox {
+        background: #dedede;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 25%;
+        font-size: 10px;
+        padding-top: 0.1px;
+        padding-left: 0.1px;
+}
+
+#listButton {
+
+}
